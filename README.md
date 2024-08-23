@@ -1,6 +1,6 @@
-# counter-wc
-
 <div align="center">
+
+<h1> counter-wc </h1>
 
 [![made with Brisa](https://img.shields.io/badge/made_with-Brisa-606ce2)](https://brisa.build)
 [![npm version](https://badge.fury.io/js/counter-wc.svg)](https://badge.fury.io/js/counter-wc)
