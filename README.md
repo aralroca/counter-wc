@@ -61,7 +61,7 @@ const html = `
 		<script type="importmap">
 			{
 				"imports": {
-						"brisa/client": "https://unpkg.com/brisa@latest/client-simplified/index.js"
+					"brisa/client": "https://unpkg.com/brisa@latest/client-simplified/index.js"
 				}
 			}
 		</script>
