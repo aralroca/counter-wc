@@ -1,6 +1,23 @@
 # counter-wc
 
+<div align="center">
+
+[![npm version](https://badge.fury.io/js/counter-wc.svg)](https://badge.fury.io/js/counter-wc)
+![npm](https://img.shields.io/npm/dw/counter-wc)
+[![size](https://img.shields.io/bundlephobia/minzip/counter-wc)](https://bundlephobia.com/package/counter-wc)
+[![PRs Welcome][badge-prwelcome]][prwelcome]
+<img src="https://github.com/aralroca/counter-wc/workflows/Test/badge.svg" /></a>
+<a href="https://twitter.com/intent/follow?screen_name=aralroca">
+<img src="https://img.shields.io/twitter/follow/aralroca?style=social&logo=x"
+            alt="follow on Twitter"></a>
+
+</div>
+
 It is a very silly example of a **Counter** Web Component. 
+
+```sh
+> bun install counter-wc
+```
 
 The idea of this library is to show how you can use the [Brisa](https://brisa.build) Web Component compiler to transform JSX with Signals into two files; one to load the web component on the client, and another to load the web component on the server to make the SSR of the Web Component easy.
 
