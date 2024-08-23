@@ -44,6 +44,8 @@ For this, you need Bun.js or Node.js. You can integrate it with any framework wi
 
 And then you can use the `renderToString` function to render the web component on the server.
 
+**ssr.js**
+
 ```jsx
 import { renderToString } from 'brisa/server';
 import { jsx } from 'brisa/jsx-runtime';
@@ -70,9 +72,11 @@ const html = `
 		</body>
 	</html>
 `;
+
+console.log(html);
 ```
 
-For the SSR is using the [Declarative Shadow DOM](https://web.dev/articles/declarative-shadow-dom).
+Then run `bun run ssr.js` and you will see the HTML with the rendered web component using the [Declarative Shadow DOM](https://web.dev/articles/declarative-shadow-dom).
 
 ### Using the Web Component in Brisa
 
