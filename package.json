@@ -1,0 +1,53 @@
+{
+	"name": "counter-wc",
+	"version": "0.1.0",
+	"description": "Example of Web Component with Brisa",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aralroca/counter-wc.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Aral Roca Gòmez",
+		"email": "contact@aralroca.com"
+	},
+    "main": "./build/counter-wc.client.js",
+    "module": "./build/counter-wc.client.js",
+    "types": "./index.d.ts",
+    "exports": {
+    ".": {
+      "import": "./build/counter-wc.client.js",
+      "require": "./build/counter-wc.client.js"
+    },
+    "./server": {
+      "import": "./build/counter-wc.server.js",
+      "require": "./build/counter-wc.server.js"
+    },
+    "./types": {
+      "import": "./index.d.ts",
+      "require": "./index.d.ts"
+    }
+  },
+    "files": [
+        "build",
+        "index.d.ts"
+    ],
+	"type": "module",
+	"scripts": {
+		"build": "brisa build -w src/counter-wc.tsx",
+		"format": "bun run biome format --write .",
+		"lint": "bun run biome lint --write ."
+	},
+	"packageManager": "bun@1.1.24",
+	"engines": {
+		"bun": ">= 1.1.24",
+		"npm": "please-use-bun",
+		"yarn": "please-use-bun",
+		"pnpm": "please-use-bun"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"brisa": "latest",
+        "typescript": "5.5.4"
+	}
+}
