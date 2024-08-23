@@ -78,7 +78,7 @@ console.log(html);
 
 Then run `bun run ssr.js` and you will see the HTML with the rendered web component using the [Declarative Shadow DOM](https://web.dev/articles/declarative-shadow-dom).
 
-### Using the Web Component in Brisa
+## Using the Web Component in Brisa
 
 Brisa uses a special integration file located at `web-components/_integrations.(tsx|ts|js|jsx)`. This file maps Web Component selectors to their respective libraries, ensuring they are correctly loaded when needed.
 
@@ -97,3 +97,25 @@ export default {
 > [!NOTE]
 >
 > After this integration, you can use the Web Component in your Brisa application directly by typing `<counter-wc></counter-wc>` in your JSX code (pages, components, web components, elements). SSR and TypeScript support are automatically handled by Brisa.
+
+## Building the Web Component
+
+You just need to clone the repository, install the dependencies with:
+
+```sh
+> bun install
+```
+
+After that, you can build the Web Component with:
+
+```sh
+> bun run build
+```
+
+Below the build script runs the `brisa build -w src/counter-wc.tsx` command that does the magic of transforming the JSX with Signals into two files, one for the client and one for the server.
+
+Feel free to use this reference library to create your own Web Components with Brisa and share them with the community.
+
+## License
+
+MIT
