@@ -23,7 +23,7 @@ The idea of this library is to show how you can use the [Brisa](https://brisa.bu
   <script type="module" src="https://unpkg.com/counter-wc@latest"></script>
 </head>
 <body>
-  <custom-counter start="15"></custom-counter>
+  <counter-wc start="15"></counter-wc>
 </body>
 </html>
 ```
