@@ -2,7 +2,16 @@
 
 # `<counter-wc />`
 
-[![made with Brisa](https://img.shields.io/badge/made_with-Brisa-606ce2)](https://brisa.build)
+<a href="https://brisa.build" target="_blank" rel="noopener noreferrer">
+  <img
+    width="150"
+    height="42"
+    src="https://aralroca.com/images/blog-images/brisa_badge.svg"
+    alt="Made with Brisa"
+  />
+</a>
+
+
 [![npm version](https://badge.fury.io/js/counter-wc.svg)](https://badge.fury.io/js/counter-wc)
 ![npm](https://img.shields.io/npm/dw/counter-wc)
 [![size](https://img.shields.io/bundlephobia/minzip/counter-wc)](https://bundlephobia.com/package/counter-wc)
